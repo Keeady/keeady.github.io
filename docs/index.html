@@ -11,11 +11,8 @@
     <p>React is loaded as a script tag.</p>
 
     <!-- We will put our React component inside this div. -->
-    <div id="like_button_container"></div>
-    <div
-  class="teams-share-button"
-  data-href="https://keeady.github.io">
-</div>
+    <div id="like_button_container" style="background-color: brown;"></div>
+    <div class="teams-share-button" data-href="https://keeady.github.io" style="background-color: darkmagenta;"></div>
 
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -23,7 +20,7 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
     <!-- Load our React component. -->
-    <script src="like_button.js"></script>
+    <script src="../like_button.js"></script>
 
     <!-- Share to teams -->
     <script async defer src="https://teams.microsoft.com/share/launcher.js"></script>
