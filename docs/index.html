@@ -13,6 +13,7 @@
         This is the first comment.
         <!-- We will put our React component inside this div. -->
         <div id="like_button_container" data-commentid="1"></div>
+        <div id="example" data-commentid="1"></div>
       </p>
 
     <!-- Load React. -->
@@ -26,6 +27,15 @@
 
     <!-- Share to teams -->
     <script async defer src="https://teams.microsoft.com/share/launcher.js"></script>
+    <script type="text/babel">
+        const Button = function () {
+            return (
+                <button>Go</button>
+            );
+        };
+
+        ReactDOM.render((<Button />), document.getElementById('example'));
+    </script>
 
   </body>
 </html>
